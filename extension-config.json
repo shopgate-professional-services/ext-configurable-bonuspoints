@@ -1,0 +1,65 @@
+{
+  "version": "1.0.0-rc.5",
+  "id": "@shopgate-project/configurable-bonuspoints",
+  "components": [
+    {
+      "id": "BonusPointsCartSubtotal",
+      "type": "portals",
+      "path": "frontend/portals/BonusPoints/CartSubtotal",
+      "target": "cart.payment-bar.totals.sub-total.after"
+    },
+    {
+      "id": "BonusPointsPdpPrice",
+      "path": "frontend/portals/BonusPoints/PdpPrice",
+      "target": "product.info.after",
+      "type": "portals"
+    },
+    {
+      "type": "translations",
+      "path": "frontend/locale/de-DE.json",
+      "id": "locale/de-DE"
+    }
+  ],
+  "configuration": {
+    "styling": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": {
+        "pdp": null,
+        "cart": null
+      },
+      "params": {
+        "label": "Glamor css object to change the styling of the text",
+        "type": "json"
+      }
+    },
+    "infoPage": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": null,
+      "params": {
+        "label": "URL to an info page",
+        "type": "text"
+      }
+    },
+    "conversionRate": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": 1,
+      "params": {
+        "label": "Rate used to convert price into points (1€/$ = {conversionRate} points)",
+        "type": "number"
+      }
+    },
+    "rounding": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": "floor",
+      "params": {
+        "label": "Rounding option that get applied to calculated points. Any available function of Math obj",
+        "type": "text"
+      }
+    }
+  },
+  "steps": []
+}
