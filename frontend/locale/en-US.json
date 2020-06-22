@@ -1,0 +1,6 @@
+{
+  "configurable_bonuspoints": {
+      "product": "Earn {points} bonus points",
+      "cartSubTotal": "Points for your order"
+  }
+}
