@@ -15,6 +15,18 @@
       "type": "portals"
     },
     {
+      "id": "MyPointsGmd",
+      "path": "frontend/portals/MyPointsGmd",
+      "target": "nav-menu.home.before",
+      "type": "portals"
+    },
+    {
+      "id": "MyPointsIos",
+      "path": "frontend/portals/MyPointsIos",
+      "target": "nav-menu.logout.before",
+      "type": "portals"
+    },
+    {
       "type": "translations",
       "path": "frontend/locale/de-DE.json",
       "id": "locale/de-DE"
@@ -58,6 +70,42 @@
       "params": {
         "label": "Rounding option that get applied to calculated points. Any available function of Math obj",
         "type": "text"
+      }
+    },
+    "showMyPointsLink": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": false,
+      "params": {
+        "label": "Toggle to show the MyPoints link in NavDrawer and MoreMenu",
+        "type": "checkbox"
+      }
+    },
+    "myPointsPathPartReplacement": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": "BonusSystem/points",
+      "params": {
+        "type": "text",
+        "label": "Replacement for my points path"
+      }
+    },
+    "checkoutUrlPathPartToReplace": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": "Shopgate/checkout",
+      "params": {
+        "type": "text",
+        "label": "The Part of the Checkout Path to Replace"
+      }
+    },
+    "navDrawerIcon": {
+      "type": "admin",
+      "destination": "frontend",
+      "default": null,
+      "params": {
+        "type": "text",
+        "label": "The icon for the points link in the NavDrawer on gmd"
       }
     }
   },

@@ -1,6 +1,7 @@
 {
   "configurable_bonuspoints": {
       "product": "Jetzt {points} Bonuspunkte sichern",
-      "cartSubTotal": "Punkte für die Bestellung"
+      "cartSubTotal": "Punkte für die Bestellung",
+      "myPoints": "Meine Bonuspunkte"
   }
 }
