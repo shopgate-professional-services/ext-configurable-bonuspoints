@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { css } from 'glamor';
 import { themeConfig } from '@shopgate/engage';
-import { useNavigation, withCurrentProduct } from '@shopgate/engage/core';
+import { i18n, useNavigation, withCurrentProduct } from '@shopgate/engage/core';
 import { I18n, InfoOutlineIcon } from '@shopgate/engage/components';
 import { infoPage, styling } from '../../../config';
 import connect from './connector';
@@ -45,7 +45,12 @@ const BonusPointsPdpPrice = ({ points }) => {
         className={styles.infoIcon}
         size={17}
       />
-      <I18n.Text string="configurable_bonuspoints.product" params={{ points }} />
+      <I18n.Text
+        string="configurable_bonuspoints.product"
+        params={{
+          points: i18n.number(points, 0),
+        }}
+      />
     </div>
   );
 };

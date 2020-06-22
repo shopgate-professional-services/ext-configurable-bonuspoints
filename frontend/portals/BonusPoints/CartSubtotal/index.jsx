@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { css } from 'glamor';
+import { i18n } from '@shopgate/engage/core';
 import { CartTotalLine } from '@shopgate/engage/components';
 import connect from './connector';
 import { styling } from '../../../config';
@@ -22,7 +23,7 @@ const BonusPointsCartSubtotal = ({ points }) => {
     <div className={styles.container}>
       <CartTotalLine>
         <CartTotalLine.Label label="configurable_bonuspoints.cartSubTotal" />
-        <CartTotalLine.Amount amount={String(points)} />
+        <CartTotalLine.Amount amount={i18n.number(points, 0)} />
       </CartTotalLine>
     </div>
   );
