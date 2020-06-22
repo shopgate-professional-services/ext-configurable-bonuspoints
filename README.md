@@ -1,7 +1,7 @@
-# Shopgate Connect - configurable bonuspoints
+# Shopgate Connect - configurable bonus points
 
-This extension adds Bonuspoints infos to PDP and Cart page.
-Rules for Bonuspoints can be configured in config.
+This extension adds Bonus points infos to PDP and Cart page.
+Rules for Bonus points can be configured in a config.
 
 ## Configuration
 
@@ -23,13 +23,15 @@ URL to an info page that open if user clicks on bonus point line on pdp. Can by 
 
 Example:
 ```json
-"styling": {
+{
+  "styling": {
     "pdp": {
       "color": "red"
     },
     "cart": {
       "margin": "5px"
     }
+  }
 }
 ```
 

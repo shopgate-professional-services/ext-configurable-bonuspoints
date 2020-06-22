@@ -21,7 +21,7 @@
     },
     {
       "type": "translations",
-      "path": "frontend/locale/de-DE.json",
+      "path": "frontend/locale/en-US.json",
       "id": "locale/en-US"
     }
   ],
