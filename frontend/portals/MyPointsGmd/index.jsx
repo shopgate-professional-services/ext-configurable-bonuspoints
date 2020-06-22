@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavDrawer } from '@shopgate/pwa-ui-material';
+import { NavDrawer } from '@shopgate/engage/components';
 import isIOSTheme from '@shopgate-ps/pwa-extension-kit/env/helpers/isIOSTheme';
 import AccountItem from '../../components/AccountItem';
 

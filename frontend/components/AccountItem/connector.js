@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { isUserLoggedIn } from '@shopgate/pwa-common/selectors/user';
+import { isUserLoggedIn } from '@shopgate/engage/user';
 import { openMyPointsPage } from './actions';
 
 /**

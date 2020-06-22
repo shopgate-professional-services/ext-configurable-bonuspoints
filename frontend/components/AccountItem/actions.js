@@ -1,8 +1,6 @@
-import { isUserLoggedIn } from '@shopgate/pwa-common/selectors/user';
-import { historyPush } from '@shopgate/pwa-common/actions/router';
-import fetchCheckoutUrl from '@shopgate/pwa-common-commerce/checkout/actions/fetchCheckoutUrl';
-import { FETCH_CHECKOUT_URL_TIMEOUT } from '@shopgate/pwa-common-commerce/checkout/constants';
-import { logger } from '@shopgate/pwa-core/helpers';
+import { isUserLoggedIn } from '@shopgate/engage/user';
+import { historyPush, logger } from '@shopgate/engage/core';
+import { fetchCheckoutUrl, FETCH_CHECKOUT_URL_TIMEOUT } from '@shopgate/engage/checkout';
 import { myPointsPathPartReplacement, checkoutUrlPathPartToReplace } from '../../config';
 
 /**
@@ -15,6 +13,7 @@ export const openMyPointsPage = () => (dispatch, getState) => {
     logger.warn('Will not fetch MyPoints Page URL because user is not logged in');
     return;
   }
+
   const started = Date.now();
   dispatch(fetchCheckoutUrl())
     .then((url) => {
