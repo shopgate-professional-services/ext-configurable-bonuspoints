@@ -7,7 +7,7 @@ import { getProductBonusPoints } from '../../../selectors';
  * @returns {Object}
  */
 const mapStateToProps = (state, props) => ({
-  points: getProductBonusPoints(state, props),
+  points: getProductBonusPoints(state, { productId: props.variantId || props.productId }),
 });
 
 export default connect(mapStateToProps);
