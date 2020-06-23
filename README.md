@@ -2,6 +2,7 @@
 
 This extension adds Bonus points infos to PDP and Cart page.
 Rules for Bonus points can be configured in a config.
+It can also add a link to a MyPointsPage page from shopping system (shopware only at the moment)
 
 ## Configuration
 
@@ -34,6 +35,15 @@ Example:
   }
 }
 ```
+
+### showMyPointsLink (boolean)
+Toggle to show the MyPoints link in NavDrawer and MoreMenu. MyPointsLink is only compatible with shopware at the moment.
+
+### myPointsPathPartReplacement (string)
+Replacement for my points path
+
+### checkoutUrlPathPartToReplace (string)
+The Part of the Checkout Path to Replace
 
 ### navDrawerIcon (string) - optional
 Icon for my points link in NavDrawer in gmd theme.

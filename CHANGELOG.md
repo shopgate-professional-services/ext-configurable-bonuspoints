@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
-## [1.0.0]
+## [1.0.0] 2020-06-23
 - initial release
 
 [Unreleased]: https://github.com/shopgate-professional-services/ext-configurable-bonuspoints/compare/v1.0.0...HEAD
