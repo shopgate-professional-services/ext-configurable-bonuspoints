@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0-rc.2",
   "id": "@shopgate-project/configurable-bonuspoints",
   "components": [
     {
@@ -89,7 +89,7 @@
     "myPointsPathPartReplacement": {
       "type": "admin",
       "destination": "frontend",
-      "default": "BonusSystem/points",
+      "default": "Shopgate/bonusPoints",
       "params": {
         "type": "text",
         "label": "Replacement for my points path"
